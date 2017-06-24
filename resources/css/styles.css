@@ -12,11 +12,13 @@ body {
 
 
 /*header section*/
-.name {
-  background-color: black;
+
+.name {   background-color: black;
+}
+
+.name .container {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 
@@ -107,25 +109,25 @@ nav ul {
   justify-content: space-between;
   background-color: white;
   margin-top: 4rem;
-  background-size: contain;
+
 }
 
 .product {
   width: 30%;
-  display: block;
 }
 
+.product-image {
+  border: 4px solid black;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 9rem;
+
+}
 
 .product-image img {
-  height: 9rem;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid black;
-}
+max-width: 8em;
 
-.product-image #glasses {
 }
 
 .product-title {
@@ -159,7 +161,7 @@ nav ul {
 
 .info {
   color: black;
-    margin-top: 0.25rem;
+  margin-top: 0.25rem;
 }
  /*footer*/
 footer {
