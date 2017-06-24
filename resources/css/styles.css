@@ -6,7 +6,7 @@ html {
 body {
   font-family: Helvetica;
   color: white;
-  background-color: darkgrey;
+  background-color: grey;
     border: 1px solid red;
 }
 
@@ -15,7 +15,8 @@ body {
 header {
   background-color: black;
   display: flex;
-  align-items: center;
+
+
 
 }
 
@@ -29,8 +30,11 @@ header img {
 
 header span {
   font-size: 1rem;
-}
+  display: inline-block;
 
+
+}
+/* general container 960px*/
 .container {
   width: 960px;
   margin: 0 auto;
@@ -70,17 +74,24 @@ h4 {
   justify-content: flex-start;
 }
 
-
+.container nav {
+  justify-content: space-between;
+}
 nav {
   display: flex;
-  justify-content: space-around;
+
   background-color: firebrick;
   margin: 0;
 }
 
 nav li {
   display: inline-block;
-    padding: 1.5rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* bottom section*/
@@ -114,5 +125,37 @@ nav li {
 }
 
 .product-title {
+  background-color: black;
+}
+
+
+.info-box {
+  display: flex;
+  border: 1px solid red;
+
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.info-grid {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.title {
+  background-color: black;
+  display: block;
+
+}
+
+.info {
+  color: black;
+}
+
+footer {
+  height: 15rem;
   background-color: black;
 }
