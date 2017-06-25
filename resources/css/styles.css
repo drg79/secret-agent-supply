@@ -272,12 +272,37 @@ footer {
    margin-top: 0.5rem;
    margin-bottom: 0;
     }
-
+/* footer change*/
 footer {
 text-align: center;
 }
 
+/*hero changes*/
 
+.title-box h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
 
+.title-box h4 {
+  font-size: 0.77rem;
+  font-weight: bold;
+}
+
+.title-box {
+  height: 100%;
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+
+}
+
+.hero {
+
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+}
 
 }
