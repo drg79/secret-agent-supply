@@ -35,9 +35,10 @@ body {
 
 /* general container 960px*/
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
+
 
  /*top section: hero and nav*/
 h1 {
@@ -75,18 +76,22 @@ h4 {
   justify-content: flex-start;
 }
 
-.container nav {
-  justify-content: space-between;
+/*nav section*/
+.nav-container {
+  width: 960px;
+  margin: 0 auto;
 }
 
 nav {
   display: flex;
+  justify-content: space-between;
   background-color: firebrick;
   margin: 0;
 }
 
 nav li {
   padding: 0.75rem 0 0.75rem 0;
+  margin: 0 1rem 0 1rem;
 }
 
 nav ul {
@@ -106,7 +111,9 @@ nav ul {
   justify-content: space-between;
   background-color: white;
   margin-top: 4rem;
+  padding: 0 1rem 0 1rem;
 }
+
 .product {
   display: flex;
 }
@@ -193,23 +200,19 @@ footer {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
+
 /* 3 -> 2 products shown */
 .product-grid {
-
   justify-content: space-around;
 }
 
 .product-grid .product {
   width: 47%;
-
-
 }
+
 #sunglasses {
   display: none;
 }
-
-
-
 }
 
 
