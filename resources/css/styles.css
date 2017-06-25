@@ -38,7 +38,10 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-
+/* problem resolved using max-width:960 instead of width:960, this kept contents
+ within 960px width but kept flex properties and allowed the desired "spillage"
+  on either side. But it messed up the nav section which has now been givn a
+  fixed width of 960 in desktop site.*/
 
  /*top section: hero and nav*/
 h1 {
@@ -111,7 +114,7 @@ nav ul {
   justify-content: space-between;
   background-color: white;
   margin-top: 4rem;
-  padding: 0 1rem 0 1rem;
+
 }
 
 .product {
@@ -158,7 +161,7 @@ nav ul {
   width: 35%;
   flex-direction: column;
   margin-top: 3rem;
-  margin-bottom: 4rem;
+
 }
 
 .title {
@@ -173,11 +176,16 @@ nav ul {
 
  /*footer*/
 footer {
-  height: 15rem;
+  margin-top: 4rem;
+  padding-top: 5rem;
+  height: 12rem;
   background-color: black;
-  display: flex;
-  align-items: center;
-}
+  }
+
+  footer .title {
+    padding: 0;
+  }
+
 
 /*media queries and styles*/
 
@@ -204,6 +212,7 @@ footer {
 /* 3 -> 2 products shown */
 .product-grid {
   justify-content: space-around;
+
 }
 
 .product-grid .product {
@@ -235,6 +244,39 @@ footer {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
+ /*product change (stack)*/
+
+ .product-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .product-grid .product {
+   width: 90%;
+   margin-bottom: 1rem;
+
+ }
+
+ /*info change (stack)*/
+ .info-grid {
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .info-box {
+   width: 90%;
+   margin-top: 0.5rem;
+   margin-bottom: 0;
+    }
+
+footer {
+text-align: center;
+}
+
 
 
 
