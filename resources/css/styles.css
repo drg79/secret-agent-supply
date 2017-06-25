@@ -7,9 +7,7 @@ body {
   font-family: Helvetica;
   color: white;
   background-color: white;
-
 }
-
 
 /*header section*/
 
@@ -21,7 +19,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 
 .name img {
   height: 1.5rem;
@@ -40,7 +37,8 @@ body {
   width: 960px;
   margin: 0 auto;
 }
- /*top section*/
+
+ /*top section: hero and nav*/
 h1 {
   font-size: 2rem;
   margin-top: 0.25rem;
@@ -54,15 +52,14 @@ h4 {
     font-weight: bold;
 }
 
-
 .title-box {
   background-color: black;
   width: 20rem;
   height: 10rem;
   display: block;
-    margin-right: 15rem;
-    padding-top: 2rem;
-    padding-left: 3rem;
+  margin-right: 15rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
 }
 
 
@@ -88,7 +85,6 @@ nav {
 }
 
 nav li {
-  display: inline-block;
   padding: 1.5rem 0 1.5rem 0;
 }
 
@@ -98,20 +94,14 @@ nav ul {
 }
 
 
-/* bottom section*/
-
-.bottom-container {
-
-}
+/* bottom section: products, info and footer */
 
 /* product section*/
-
 .product-grid {
   display: flex;
   justify-content: space-between;
   background-color: white;
   margin-top: 4rem;
-
 }
 
 .product-grid .product {
@@ -140,8 +130,8 @@ nav ul {
   padding: 0.5rem 0 0.5rem 0;
   text-align: center;
 }
- /* INFO SECTION*/
 
+ /* INFO SECTION*/
 .info-grid {
   background-color: white;
   display: flex;
@@ -154,28 +144,24 @@ nav ul {
   flex-direction: column;
   margin-top: 3rem;
   margin-bottom: 4rem;
-
 }
 
 .title {
   background-color: black;
-  display: block;
   padding: 1rem 0 1rem 2rem;
-
 }
 
 .info {
   color: black;
   margin-top: 0.25rem;
 }
+
  /*footer*/
 footer {
   height: 15rem;
   background-color: black;
+  display: flex;
+  align-items: center;
 }
 
 /*media queries*/
-
-@@media screen only and {
-
-}
