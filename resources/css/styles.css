@@ -211,7 +211,8 @@ footer {
 
 /* 3 -> 2 products shown */
 .product-grid {
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 1rem;
 
 }
 
@@ -222,8 +223,18 @@ footer {
 #sunglasses {
   display: none;
 }
-}
 
+.info-grid {
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+footer {
+text-align: center;
+}
+}
+/* Note- i have made personal graphic design changes to these media query styles, 
+different to the specs*/
 
 /* 470px*/
 @media only screen and (max-width: 470px) {
@@ -251,7 +262,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
  }
 
  .product-grid .product {
@@ -263,7 +273,7 @@ footer {
  /*info change (stack)*/
  .info-grid {
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
  }
 
@@ -272,6 +282,7 @@ footer {
    margin-top: 0.5rem;
    margin-bottom: 0;
     }
+
 /* footer change*/
 footer {
 text-align: center;
@@ -295,13 +306,12 @@ text-align: center;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-bottom: 1.5rem;
-
 }
 
 .hero {
-
   display: flex;
   align-items: flex-end;
+  justify-content: flex-start;
   padding-bottom: 0.5rem;
 }
 
