@@ -38,10 +38,6 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-/* problem resolved using max-width:960 instead of width:960, this kept contents
- within 960px width but kept flex properties and allowed the desired "spillage"
-  on either side. But it messed up the nav section which has now been givn a
-  fixed width of 960 in desktop site.*/
 
  /*top section: hero and nav*/
 h1 {
@@ -114,7 +110,6 @@ nav ul {
   justify-content: space-between;
   background-color: white;
   margin-top: 4rem;
-
 }
 
 .product {
@@ -161,7 +156,6 @@ nav ul {
   width: 35%;
   flex-direction: column;
   margin-top: 3rem;
-
 }
 
 .title {
@@ -193,126 +187,132 @@ footer {
 @media only screen and (max-width: 960px) and (min-width: 470px) {
 
   /* menu change*/
-  .full-menu {
-    display: none;
-  }
+    .full-menu {
+      display: none;
+    }
 
-  .mobile-menu {
-    display: flex;
-    justify-content: center;
-    background-color: firebrick;
-    margin: 0;
-  }
+    .mobile-menu {
+      display: flex;
+      justify-content: center;
+      background-color: firebrick;
+      margin: 0;
+    }
 
-  .mobile-menu span {
+    .mobile-menu span {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
+    }
 
 /* 3 -> 2 products shown */
-.product-grid {
-  justify-content: space-between;
-  margin: 1rem;
+    .product-grid {
+      justify-content: space-between;
+      margin: 1rem;
+    }
 
-}
+    .product-grid .product {
+        width: 47%;
+    }
 
-.product-grid .product {
-  width: 47%;
-}
+    #sunglasses {
+      display: none;
+    }
 
-#sunglasses {
-  display: none;
+    .info-grid {
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem;
+    }
+    footer {
+    text-align: center;
+    }
 }
-
-.info-grid {
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-}
-footer {
-text-align: center;
-}
-}
-/* Note- i have made personal graphic design changes to these media query styles, 
+/* Note- i have made personal graphic design changes to these media query styles,
 different to the specs*/
 
 /* 470px*/
 @media only screen and (max-width: 470px) {
 
-  /*menu change*/
-  .full-menu {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: flex;
-    justify-content: center;
-    background-color: firebrick;
-    margin: 0;
-  }
-
-  .mobile-menu span {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
- /*product change (stack)*/
-
- .product-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
-
- .product-grid .product {
-   width: 90%;
-   margin-bottom: 1rem;
-
- }
-
- /*info change (stack)*/
- .info-grid {
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
- }
-
- .info-box {
-   width: 90%;
-   margin-top: 0.5rem;
-   margin-bottom: 0;
+    .container {
+      max-width: 100%;
     }
 
-/* footer change*/
-footer {
-text-align: center;
-}
+    /*menu change*/
+    .full-menu {
+      display: none;
+    }
 
-/*hero changes*/
+    .mobile-menu {
+      display: flex;
+      justify-content: center;
+      background-color: firebrick;
+      margin: 0;
+    }
 
-.title-box h1 {
-  font-size: 1rem;
-  font-weight: bold;
-}
+    .mobile-menu span {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+   /*product change (stack)*/
 
-.title-box h4 {
-  font-size: 0.77rem;
-  font-weight: bold;
-}
+   .product-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
 
-.title-box {
-  height: 100%;
-  width: 100%;
-  padding-top: 1rem;
-  padding-left: 2rem;
-  padding-bottom: 1.5rem;
-}
+   .product-grid .product {
+     width: 90%;
+     margin-bottom: 1rem;
+   }
 
-.hero {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding-bottom: 0.5rem;
-}
+   /*info change (stack)*/
+   .info-grid {
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+   }
+
+   .info-box {
+     width: 90%;
+     margin-top: 0.5rem;
+     margin-bottom: 0;
+      }
+
+  /*hero changes*/
+
+  .title-box h1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .title-box h4 {
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+    .title-box {
+      
+    height: 100%;
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    padding-right: 0;
+      }
+
+  .hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+  }
+
+
+  /* footer change*/
+  footer {
+  text-align: center;
+  }
+
 
 }
